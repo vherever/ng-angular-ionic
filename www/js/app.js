@@ -81,7 +81,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     })
 
     
-    .state('tab.friend-new', {
+    .state('tab.friends-new', {
       url: '/friends/new',
       views: {
         'tab-friends': {

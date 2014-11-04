@@ -1,9 +1,9 @@
 <ion-view title="Friends">
   <ion-content>
-      <a href="#/tab/friends/new"><i class="fa fa-plus"></i></a>
+      <a href="#/tab/friends/new"><i class="fa fa-plus fa-2x"></i></a>
     <ion-list>
       <ion-item ng-repeat="friend in friends" type="item-text-wrap" href="#/tab/friend/{{friend.$id}}">
-        {{friend.firstname}}
+        {{friend.firstname}} {{friend.lastname}}
 
       </ion-item>
 
