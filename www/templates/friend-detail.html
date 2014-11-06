@@ -7,7 +7,9 @@
 <ion-view title="{{friend.firstname}} {{friend.lastname}}">
   <ion-content has-header="true" padding="true">
 
-  	<form name="myForm" class="col-md-4">
+
+
+  	<form name="myForm" class="col-lg-8 col-lg-offset-2">
 
 	<div class="input-group">
 		  <span class="input-group-addon"><i class="fa fa-user"></i></span>
@@ -51,13 +53,15 @@
 
 
 
-
+	
 	<a href="#/tab/friends" class="btn">Cancel</a>
 	<button ng-click="save()" ng-disabled="myForm.$invalid"
-		class="btn btn-primary">Save</button>
+		class="btn btn-primary ">Save</button>
 	<button ng-click="destroy()"
-		ng-show="friend.$id" class="btn btn-danger">Delete</button>	
+		ng-show="friend.$id" class="btn btn-danger">Delete</button>
+	
 </form>
+
 
   </ion-content>
 </ion-view>
