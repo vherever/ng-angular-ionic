@@ -1,4 +1,8 @@
 <ion-view title="Friends">
+
+
+
+
   <ion-content>
 
   	<nav class="navbar navbar-default" role="navigation">
@@ -10,17 +14,21 @@
 		  
 		</form>
 
-		<a href="#/tab/friends/new"><i class="fa fa-plus fa-3x"></i></a>
+		<a href="#/friends/new"><i class="icon ion-ios7-plus"></i></a>
 	</nav>
 
 
       
     <ion-list>
-      <ion-item ng-repeat="friend in friends | filter:search | orderBy:'firstname'" type="item-text-wrap" href="#/tab/friend/{{friend.$id}}" class="animation">
-        {{friend.firstname}} {{friend.lastname}}
+      <ion-item ng-repeat="friend in friends | filter:search | orderBy:'firstname'" type="item-text-wrap" href="#/friend/{{friend.$id}}" class="animation">
+        {{friend.firstname}} {{friend.lastname}}  
+
+        <img ng-src="{{friend.photo}}" class="fl-r">
 
       </ion-item>
 
     </ion-list>
   </ion-content>
 </ion-view>
+
+

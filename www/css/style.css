@@ -3,22 +3,18 @@ a:hover {
 	text-decoration: none !important;
 }
 
-.fa-plus {
-	margin-top: 6px !important;
-	margin-left: 10px !important;
-
-}
 
 @media screen and (max-width: 768px) {
-	.fa-plus {
+	i.ion-ios7-plus {
 				position: relative !important;
 				margin-top: -3px !important;
-			   left: 50% !important;
+			   left: 45% !important;
 	}
 
 	
 }
 
+/*
 .input-group {
 	padding: 2px;
 }
@@ -27,7 +23,7 @@ a:hover {
 .btn-danger {
 	float: right;
 }
-
+*/
 .animation {-webkit-transition: 1s;}
 
 .animation.ng-enter-stagger,
@@ -43,3 +39,41 @@ a:hover {
 
 .animation.ng-leave {opacity: 1;}
 .animation.ng-leave.ng-leave-active {opacity: 0;}
+
+
+.form-control, .form-control:focus {
+    border-color: #cccccc !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+textarea {
+	border: none !important;
+}
+
+
+
+i.ion-ios7-plus {
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+
+.fl-r {
+	float: right;
+	height: 64px;
+	width:64px;
+	margin-top: -12px;
+	border: 2px solid orange;
+	border-radius: 5px;
+
+}
+
+.img-view {
+	max-width: 128px;
+	max-height: 128px;
+}
+
+.item-content {
+	height: 72px !important;
+}
