@@ -7,9 +7,13 @@ a:hover {
 @media screen and (max-width: 768px) {
 	i.ion-ios7-plus {
 				position: relative !important;
-				margin-top: -3px !important;
-			   left: 45% !important;
+				margin-left: -33px !important;
+			   
 	}
+	.button.button-clear {
+		margin-right: 50px !important;
+	}
+	
 
 	
 }
@@ -69,7 +73,7 @@ i.ion-ios7-plus {
 
 }
 
-.img-view {
+.img-thumbnail {
 	max-width: 256px;
 
 }
@@ -109,7 +113,12 @@ img#pano {
 	filter: alpha(opacity=0);
 }
 
-.modalDetail {
+.modalDetail  {
 	margin-left: 0 !important;
 	width: 190px;
+}
+
+
+.img-thumbnail {
+	max-width: 400px !important;
 }

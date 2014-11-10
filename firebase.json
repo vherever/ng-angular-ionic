@@ -1,0 +1,9 @@
+{
+  "firebase": "ionic-ng-contacts",
+  "public": "www",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
