@@ -24,7 +24,7 @@ a:hover {
 	float: right;
 }
 */
-.animation {-webkit-transition: 1s;}
+.animation {-webkit-transition: 0.2s;}
 
 .animation.ng-enter-stagger,
 .animation.ng-leave-stagger {
@@ -61,19 +61,55 @@ i.ion-ios7-plus {
 
 .fl-r {
 	float: right;
-	height: 64px;
-	width:64px;
-	margin-top: -12px;
+	height: 72px;
+	width:72px;
+	margin-top: -16px;
 	border: 2px solid orange;
 	border-radius: 5px;
 
 }
 
 .img-view {
-	max-width: 128px;
-	max-height: 128px;
+	max-width: 256px;
+
 }
 
 .item-content {
 	height: 72px !important;
+}
+
+.ionlist {
+	padding-top: 40px !important;
+}
+
+.Xclear {
+	margin-left: 30px;
+}
+
+
+img#pano {
+	max-width: 128px;
+
+}
+
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+
+}
+.fileUpload input.upload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.modalDetail {
+	margin-left: 0 !important;
+	width: 190px;
 }

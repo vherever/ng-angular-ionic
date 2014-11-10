@@ -1,24 +1,24 @@
 <ion-view title="Friends">
 
 
+    <div class="bar bar-subheader item-input-inset" >
+
+        <i class="icon ion-ios7-search placeholder-icon"></i>
+        <input type="text" class="form-control" data-ng-model="search"></input> 
+        <a class="button button-clear" href="" data-ng-click="clearSearch()">X</a>
+   
+        
+        <a href="#/friends/new"><i class="icon ion-ios7-plus"></i></a>
+    </div>
+
 
 
   <ion-content>
 
-  	<nav class="navbar navbar-default" role="navigation">
-
-		
-		<form class="navbar-form navbar-right" role="search">
-		  
-		    <input type="text" ng-model="$parent.search" class="form-control" placeholder="Search">
-		  
-		</form>
-
-		<a href="#/friends/new"><i class="icon ion-ios7-plus"></i></a>
-	</nav>
+  
 
 
-      
+    <div class="ionlist">
     <ion-list>
       <ion-item ng-repeat="friend in friends | filter:search | orderBy:'firstname'" type="item-text-wrap" href="#/friend/{{friend.$id}}" class="animation">
         {{friend.firstname}} {{friend.lastname}}  
@@ -28,6 +28,7 @@
       </ion-item>
 
     </ion-list>
+    </div>
   </ion-content>
 </ion-view>
 

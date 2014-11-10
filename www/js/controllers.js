@@ -1,11 +1,16 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {
-})
-
 //ListCtrl
 .controller('FriendsCtrl', function($scope, Friends) {
   $scope.friends = Friends;
+
+  $scope.clearSearch = function () {
+        $scope.search = "";
+    };
+
+  
+
+
 })
 
 .controller('CreateCtrl', function($scope, $location, Friends) {

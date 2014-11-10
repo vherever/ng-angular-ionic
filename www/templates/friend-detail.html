@@ -2,30 +2,35 @@
   <ion-content has-header="true" padding="true">
 
 
-  <div class="row modalDetail" ng-controller='UploadCtrl'>
-    <table class="" ng-model='friend'>
-      <tbody>
-        <tr>
-          <span class="btn btn-default btn-file">
-      		<input type="file" accept="image/*" capture="camera" id="file-upload" ng-model='friend.photo'>
-     	  	<div class='btn btn-warning' ng-click='save()'> save image</div>
-      		<img id="pano">
-    	  </span>
-          </tr>
-      </tbody>
-    </table>
-
-    
-
-  </div>
+  
 
 
 
 
 	
 <div class="list card">
+	<div class="row modalDetail" ng-controller='UploadCtrl'>
+    <div class="" ng-model='friend'>
+      
+        
+        <div class="fileUpload btn btn-primary"> 
+        	<span>Upload</span> 
+      		<input type="file" accept="image/*" capture="camera" id="file-upload" ng-model='friend.photo' class="upload">
+      	</div>
+     	  	<div class='btn btn-warning' ng-click='save()'> save image</div>
+     	  	<br><br>
+      		<img id="pano" class="img-rounded">
+    	  
+         
+      
+    </div>
 
-		<img data-ng-src="{{friend.photo}}" ng-model='friend.photo' class="img-view" />
+    
+
+  </div>
+
+
+		<img data-ng-src="{{friend.photo}}" ng-model='friend.photo' class="img-view img-thumbnail" />
  	
 	 	<span class="item item-icon-left">	
 	 	<input input type="text" name="firstname" ng-model='friend.firstname' class="form-control" placeholder="First Name"><i class="icon ion-ios7-person"></i>
